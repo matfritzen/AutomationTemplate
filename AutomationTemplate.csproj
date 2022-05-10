@@ -1,0 +1,76 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.1.1" />
+    <PackageReference Include="NUnit.ConsoleRunner" Version="3.15.0" />
+    <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+    <PackageReference Include="DotNetSeleniumExtras.PageObjects.Core" Version="4.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+    <PackageReference Include="Selenium.Support" Version="4.1.1" />
+    <PackageReference Include="SpecFlow" Version="3.9.74" />
+    <PackageReference Include="SpecFlow.NUnit" Version="3.9.74" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="101.0.4951.4100" />
+    <PackageReference Include="SpecFlow.NUnit.Runners" Version="3.9.74" />
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.9.74" />
+    <PackageReference Include="NUnit.Extension.NUnitV2ResultWriter" Version="3.7.0" />
+    <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Selenium.WebDriver" />
+    <None Remove="NUnit.ConsoleRunner" />
+    <None Remove="DotNetSeleniumExtras.WaitHelpers" />
+    <None Remove="DotNetSeleniumExtras.PageObjects.Core" />
+    <None Remove="Microsoft.Extensions.Configuration.FileExtensions" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Microsoft.Extensions.Configuration.Json" />
+    <None Remove="Selenium.Support" />
+    <None Remove="SpecFlow" />
+    <None Remove="SpecFlow.Tools.MsBuild.Generation" />
+    <None Remove="SpecFlow.NUnit" />
+    <None Remove="Enumerators\" />
+    <None Remove="Features\" />
+    <None Remove="Hook\" />
+    <None Remove="Pages\" />
+    <None Remove="Steps\" />
+    <None Remove="Selenium.WebDriver.ChromeDriver" />
+    <None Remove="SpecFlow.NUnit.Runners" />
+    <None Remove="SpecRun.SpecFlow" />
+    <None Remove="MSTest.TestAdapter" />
+    <None Remove="MSTest.TestFramework" />
+    <None Remove="Reports\" />
+    <None Remove="NUnit.Extension.NUnitV2ResultWriter" />
+    <None Remove="SpecFlow.Plus.LivingDocPlugin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Enumerators\" />
+    <Folder Include="Features\" />
+    <Folder Include="Hook\" />
+    <Folder Include="Pages\" />
+    <Folder Include="Steps\" />
+    <Folder Include="Reports\" />
+  </ItemGroup>
+  <ItemGroup>
+    <SpecFlowFeatureFiles Update="Features\Google.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Google.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Features\Google.feature.cs">
+      <DependentUpon>Google.feature</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
