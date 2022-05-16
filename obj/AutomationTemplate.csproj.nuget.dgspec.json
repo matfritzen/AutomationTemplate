@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/matheus.fritzen/Projects/AutomationTemplate/AutomationTemplate/AutomationTemplate.csproj": {}
+    "C:\\Projects\\AutomationTemplate\\AutomationTemplate\\AutomationTemplate.csproj": {}
   },
   "projects": {
-    "/Users/matheus.fritzen/Projects/AutomationTemplate/AutomationTemplate/AutomationTemplate.csproj": {
+    "C:\\Projects\\AutomationTemplate\\AutomationTemplate\\AutomationTemplate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/matheus.fritzen/Projects/AutomationTemplate/AutomationTemplate/AutomationTemplate.csproj",
+        "projectUniqueName": "C:\\Projects\\AutomationTemplate\\AutomationTemplate\\AutomationTemplate.csproj",
         "projectName": "AutomationTemplate",
-        "projectPath": "/Users/matheus.fritzen/Projects/AutomationTemplate/AutomationTemplate/AutomationTemplate.csproj",
-        "packagesPath": "/Users/matheus.fritzen/.nuget/packages/",
-        "outputPath": "/Users/matheus.fritzen/Projects/AutomationTemplate/AutomationTemplate/obj/",
+        "projectPath": "C:\\Projects\\AutomationTemplate\\AutomationTemplate\\AutomationTemplate.csproj",
+        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\AutomationTemplate\\AutomationTemplate\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/matheus.fritzen/.config/NuGet/NuGet.Config"
+          "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -126,7 +128,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.407/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
